@@ -1,0 +1,37 @@
+Introduction to the course.
+
+How to use TOPS Career Centre Students Portal.
+
+Introduction to Github and steps to make Github ID 
+and installation of Github Desktop.
+
+___________________________________________________________________
+
+
+Program : It is a set of Instructions.
+
+Software : A set of programs is called as software.
+
+
+There is two types of softwares:
+
+1. System Software :
+	E.g., Windows as OS in Computer and
+		Android as OS in Mobile.
+
+2. Application Software :
+	E.g., Amazon,Flipkart,Gpay,Etc.
+
+
+___________________________________________________________________
+
+Software Developement Life Cycle (SDLC) :
+
+1. Requirement
+2. Analyse
+3. Design
+4. Developement
+5. Testing
+6. Deployement
+7. Maintenance
+	
