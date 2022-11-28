@@ -1,0 +1,26 @@
+Algorithms : It is a process of following step-by-step 
+	     is called Algorithms.
+
+
+Que.1 Create an algorithm of making a Tea.
+Steps:
+
+step 1: Start.(Turn the stove on)
+step 2: Take the inputs.(Container,water,tea,sugar,etc.)
+step 3: Process.(Boiling)
+step 4: Testing.(If tea is good, then go to next step else start again)
+step 5: Output.(Serve)
+step 6: Stop.
+
+
+Que.2 Create an algorithm to take two inputs and add them.
+Steps:
+
+step 1: Start Program.
+step 2: Take input A and input B from user.
+step 3: If A & B both are integers, add them else addition is not 
+	possible start again.
+step 4: Show the addition.
+step 5: Stop.
+ 
+ 
