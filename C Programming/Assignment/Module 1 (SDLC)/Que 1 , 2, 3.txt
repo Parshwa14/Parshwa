@@ -1,0 +1,175 @@
+Que-1: What is Software? What is Software Engineering?
+
+Answer: 
+
+Software: It is a set of instructions, data or programs
+	  used to operate computer and execute specific tasks.
+	 
+	  Software is a generic term used to refer to applications,
+	  scripts and programs that run on a device.
+
+Software Engineering: Software Engineering is a systematic engineering
+		      approach to software development.
+		      
+                      It is the application of priciples used in the 
+		      field of engineering, which usually deals with 
+		      physical systems, to the design, development, 
+		      testing, deployment and management of software
+		      systems.
+
+_________________________________________________________________________________
+
+Que-2: Explain types of Softwares.
+
+Answer: 
+
+There is Two types of Softwares.
+1) System Software
+2) Application Software
+
+1) System Software: 
+
+It is usually defined as a set of various programs or instructions 
+that help to control or manage the hardware devices connected to 
+the computer and other important resources of the system.
+			
+Specifically, it helps in making the working of the computer efficient,
+enables faster performance in a secure manner.
+ 
+In addition, the system software also establishes a platform to run the
+application software.
+ 
+Some examples of system software are as follows:
+
+Operating system: MS Windows,Android,IOS,Linux,MacOS,etc.  
+Device Drivers: BIOS,Sound Card,Display,USb drivers,etc.
+Firmware: BIOS,UEFI,Embedded systems,computer peripherals,etc.
+Language Translators: Interpreter,Compiler,Assembler,etc.
+Utility: Winrar,Antivirus,etc.
+
+	
+2) Application Software:
+
+Application software refers to a set of programs and instructions
+that help perform specific tasks, on a computer system. It is mainly
+designed to meet certain requirements of aparticular environment.
+
+Application software can be downloaded and install manually on the
+computer system and these software have nothing to do with the system
+core functions.
+ 
+Application software typically runs in the front-end,making it more
+accessible and interactable to users. 
+
+Some examples of application software are as follows:
+
+Word processors: MS Word, Google docs,etc.
+Database software: MS access, MySQL,etc.
+Multimedia software: VLC, Picasa, Adobe photoshop,etc.
+Graphics software: GIMP, MS Paint, CorelDraw,etc.
+Web browsers: Google Chrome, Mozilla Firefox,MS Edge,etc.
+
+_________________________________________________________________________________
+
+Que-3: What is SDLC? Explain each phase of SDLC.
+
+Answer:
+
+It is a structured process that enables the production of high-quality,
+low-cost software, in the shortest possible production time.
+
+The goal of the SDLC is to produce superior software that meets and 
+exceeds all customer expectations and demands.
+
+There are 7 phases of SDLC:
+
+Phase 1: Requirement collection and analysis 
+	
+	This stage gives a clearer picture of the scope the entire 
+	project and the anticipated issues,opportunities, and 
+	directives which triggered the project.
+
+	Requirements Gathering stage need teams to get detailed and 
+	precise requirements. This helps companies to finalize the
+	necessary timeline to finish the work of that system. 
+
+Phase 2: Feasibility study
+	
+	Once the requirement analysis phase is completed the next sdlc 
+	step is to define and document software needs. 
+	
+	This process conducted with the help of ‘Software Requirement 
+	Specification’ document also known as ‘SRS’ document. It 
+	includes everything which should be designed and developed 
+	during the project life cycle.
+
+	There are five types of feasibility checks:
+	1. Economic
+	2. Legal
+	3. Operation feasibility
+	4. Technical
+	5. Schedule
+
+Phase 3: Design
+
+	In this third phase, the system and software design documents
+	are prepared as per the requirement specification document.
+	This helps define overall system architecture.
+
+	This design phase serves as input for the next phase of the 
+	model.
+
+	
+Phase 4: Coding/Developemment
+
+	Once the system desgin phase is over, the next phase is coding.
+	In this phase, developers start build the entire system by 
+	writing code by using the chosen programming language. In the 
+	coding phase, tasks are divided into units or modules and 
+	assigned to the various developers. It is the longest phase of
+	the software developement life cycl process.
+	
+	In this phase, Developer needs to follow certain predefined
+	coding guidelines. They also need to use programming tools
+	like compiler, interpreter, debugger to generate and implement
+	the code.
+
+Phase 5: Testing 
+	
+	Once the software is complete, and it is deployed in testing
+	environment. The testing team starts testing the functionality
+	of the entire system. This is done to verify that the entire 
+	application works according to the cutomer requirement.
+	
+	During this phase, QA and testing team may find some bugs/defects
+	which they communicates to developer. The developement team fixes 
+	the bug and send back to QA for a re-test. This process continues
+	until the software is bug-free, stable and working according to 
+	the business needs of that system.
+
+Phase 6: Installation/Deployment
+
+	Once the software testing phase is over and no bugs or errors
+	left in the system then the final deployment process starts.
+	Based on the feedback given by the project manager, the final
+	software is released and checked for the deployment issues if
+	any.
+
+
+Phase 7: Maintenance
+	
+	Once the system is deployed, and customer start using the 
+	developed system, following 3 activities ocuur:
+
+	Bug fixing - bugs are reported because of some scenarios 
+		     which are not tested at all
+
+	Upgrade - Upgrading the application to the newer versions of 
+		  the software
+	
+	Enhancement - Adding some new features into the existing software
+
+	
+	The main focus of this SDLC phase is to ensure that needs continue 
+	to be met and that the system continues to perform as per the
+	specification mentioned in the first phase.  	 			
