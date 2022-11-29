@@ -1,0 +1,106 @@
+Conditional statements : It helps to take decision.
+
+1) simple if 
+	syntex :	
+		if(condition)
+		{
+			statement;
+		}
+
+
+2) if/else
+	syntex:
+		if(condition)
+		{
+			statement;
+		}
+		else
+		{
+			statement;
+		}
+
+
+3) nested if/else
+	syntex:
+		if(condition)
+		{
+			if(condition)
+			{
+				statement;
+			}
+			else
+			{
+				statement;
+			}
+		}
+
+		else
+		{
+			statement;
+		}
+
+4) ladder if/else
+	syntex:
+
+		if(condition)
+		{
+			statement;
+		}
+
+		else if(condition)
+		{
+			statement;
+		}
+
+		else if(condition)
+		{
+			statement;
+		}
+
+		else if(condition)
+		{
+			statement;
+		}
+
+		else
+		{
+			statement;
+		}
+
+5) switch statement
+
+	syntex:
+		switch(condition)
+		{	 	
+			case type:statement
+				  break;
+			case type:statement
+				  break;
+			case type:statement
+				  break;
+			case type:statement
+				  break;
+			default type:statement
+				  break;
+			.
+			.
+			.
+		}
+
+Jumping kaywords:
+
+1) break.
+2) continue.
+3) goto. 
+
+
+single line comment 
+
+// code
+
+
+multi line comment
+
+/* code
+   code 
+   code */

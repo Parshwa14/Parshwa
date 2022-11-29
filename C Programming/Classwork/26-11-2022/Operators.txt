@@ -1,0 +1,13 @@
+Operators in c 
+
+1) Arithmetic Operators  +, -, *, /
+
+2) Logical Operators &&(and), ||(or), !(not)
+
+3) Comparison Operator ==, =>, =<, !=
+
+4) Assignment Operator =, =+, =-, =*, =/
+
+5) Ternary Operator ?, :
+
+6) Unary Operator ++(increment by 1), --(decrement by 1) 
