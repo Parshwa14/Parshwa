@@ -40,7 +40,7 @@ void main()
 		case 4 : printf("\n\t   Division = %.2f ",((float)a/b));
 					break;
 					
-		default : printf("\n\t  It is a consonent");
+		default : printf("\n\t  Invalid Input!");
 					break;
 	
 	}
