@@ -7,7 +7,7 @@ void main()
 	int arr1[5];
 	int i,j,temp;
 	
-	printf("\Enter Array 1 Elements :");
+	printf("\nEnter Array 1 Elements :");
 	for(i=0;i<5;i++)														//	Taking input from User for array elements
 	{
 		printf("\nEnter Element [%d] :",i+1);
