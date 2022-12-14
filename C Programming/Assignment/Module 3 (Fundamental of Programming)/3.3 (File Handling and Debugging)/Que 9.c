@@ -1,0 +1,1 @@
+//Que 9  : Write a program of structure employee that provides the following information -print and display empno, empname, address and age.
