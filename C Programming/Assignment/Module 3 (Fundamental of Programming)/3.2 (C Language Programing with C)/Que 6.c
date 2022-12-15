@@ -1,0 +1,1 @@
+//Que 6 Write a program to print factorial of given number.
