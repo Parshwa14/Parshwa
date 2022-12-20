@@ -1,8 +1,9 @@
-//Que 3 : WAP to find reverse of string using recursion.
+//Que 3 : Write a program to find reverse of string using recursion.
 
 #include <stdio.h>
 
 void main()
 {
+	char s[20];
 	
 }
