@@ -12,8 +12,10 @@ class Student
 	{
 		cout<<"\nEnter Roll no. :";
 		cin>>r_no;
+		fflush(stdin);													
 		cout<<"\nEnter Name :";
-		cin>>name;
+//		cin>>name;														//it uses space as separator so we cannot add full name
+		getline(cin,name);												//to get a line as a object including spaces
 		cout<<"\nEnter Rank :";
 		cin>>rank;														//function in class
 	}
