@@ -31,11 +31,12 @@ class Lecture
 		
 		void display()
 		{
-			cout<<"\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
+			
 			cout<<"\n\t\t->Lecturer Name :  "<<f_lecturer;
 			cout<<"\n\t\t->Subject Name : "<<f_sub;									//a method to show the entered value	
 			cout<<"\n\t\t->Course Name  : "<<f_course;
-			cout<<"\n\t\t->No.of Lectures :  "<<f_no;
+			cout<<"\n\t\t->No.of Lectures :  "<<f_no<<"\n";
+			cout<<"\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n";
 			
 		}	
 		
@@ -69,12 +70,19 @@ int main()
 	cout<<"\n\t\tEnter Fifth Lecturer and info.\n";
 	l5.input(a_lecturer,a_sub,a_course,a_no);   					//using the object taking the inout from the user of daaa
 	
+
+	
 	cout<<"\n\n";
-	cout<<"\nThe Entered Details are as Below : \n";
+	cout<<"\n\tThe Entered Details are as Below : ";
+	cout<<"\n\t\tFirst Lecture Details:\n";
 	l1.display();
+	cout<<"\n\t\tSecond Lecture Details:\n";
 	l2.display();
-	l3.display();													//using the display method to show the input the entered  by the user
+	cout<<"\n\t\tThird Lecture Details:\n";
+	l3.display();								
+	cout<<"\n\t\tFourth Lecture Details:\n";					//using the display method to show the input the entered  by the user
 	l4.display();
+	cout<<"\n\t\tFifth Lecture Details:\n";
 	l5.display();
 	
 	return 0;
