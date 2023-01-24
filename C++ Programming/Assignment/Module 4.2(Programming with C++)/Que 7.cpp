@@ -38,6 +38,7 @@ class Result:public Test
 		
 		void show()
 		{
+			cout<<"\n--------------------------------";
 			cout<<"\nRoll no : "<<Rollno;						//method for showing the inputs and the data
 			cout<<"\nMath Marks : "<<Math;
 			cout<<"\nScience Marks : "<<Sci;
