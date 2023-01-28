@@ -5,50 +5,40 @@
 #include<iostream>
 using namespace std;
 
-
-class Operation
+class Calculate
 {
 	public:
-		int a,b;
 		
-		void maths(int a)
-		{
-			cout<<"\nAddition is : "<<(a+b);
+		int math(int a, int b)							//different method with different parameters 
+		{												//function overloading
+			return (a+b);
 		}
 		
-		int maths(int b)
+		float math(float a,float b)
 		{
 			return (a-b);
 		}
 		
-		void maths(int a,int b)
+		int math(float a,int b)
 		{
-			cout<<"\nMultiplication is : "<<(a*b);
+			return (a*b);
+		}
+			
+		float math(int a,float b)
+		{
+			return (a/b);
 		}
 		
-		void maths()
-		{
-			int a = 10,b = 15;
-			cout<<"\nDivision is : "<<((float)a/b);
-		}
-		
-		
-	void get()
-	{
-		cout<<"\nEnter A : ";
-		cin>>a;
-		cout<<"\nEnter B : ";
-		cin>>b;
-	}
 };
 
 int main()
 {
-	Operation m;
-	m.get();
-	m.maths(5);
-	m.maths(10);
-	m.maths(10,12);
-	m.maths();
+	int a = 10,b = 5;
+	float c = 20,d = 15;
+	Calculate cal;
+	cout<<"\nAddition is : "<<cal.math(a,b);
+	cout<<"\nSubtraction is : "<<cal.math(c,d);
+	cout<<"\nMultiplication is : "<<cal.math(c,a);
+	cout<<"\nDivision is : "<<cal.math(a,c);
 	return 0;
 }
