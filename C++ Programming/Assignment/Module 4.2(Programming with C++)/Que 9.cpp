@@ -6,54 +6,69 @@ using namespace std;
 class AddMatrix
 {
 	public:
-		int arr1[5],arr2[5],i,j;
+		int mt[5],res[5],i,j;
 		
-		void setarr1()
-		{
+		void setmat()
+		{													//method to take input
 			for(i=0;i<5;i++)
 			{
-				cout<<"\nEnter Array 1 Element : ";
-				cin>>arr1[i];
+				cin>>mt[i];
 			}
 		}
 		
-		void setarr2()
-		{
-			for(j=0;j<5;j++)
-			{
-				cout<<"\nEnter Array 2 Element : ";
-				cin>>arr2[j];
-			}
-		}
 		
-		void showmat1()
-		{
-			cout<<"\nElements of Array 1 : \n\n";
+		void showmat()
+		{													//method to show the input
 			for(i=0;i<5;i++)
 			{
-				cout<<arr1[i]<<"\t";
+				cout<<"\t"<<mt[i];
 			}
 			cout<<"\n\n\n";
 		}
-	
-	
-		void showmat2()
+		
+		AddMatrix operator + (AddMatrix x)
 		{
-			cout<<"\nElements of Array 2 : \n\n";
-			for(j=0;i<5;j++)
+			AddMatrix a1;
+			for(i=0;i<5;i++)
 			{
-				cout<<arr2[j]<<"\t";
+				a1.res[i]=mt[i]+x.mt[i];								//operator overlaoding
 			}
-				cout<<"\n\n\n";
+			
+			for(i=0;i<5;i++)
+			{
+				cout<<"\t"<<a1.res[i];	
+			}	
+			
+			return a1;
 		}
+	
+	
+		
 };
 
 int main()
 {
-	AddMatrix a1;
-	a1.setarr1();
-	a1.setarr2();
-	a1.showmat1();
-	a1.showmat2();
+	AddMatrix a1,a2;
+	cout<<"\n\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Addition of Two Matrix \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\n\n\n";
+	//getting input for the elements of both the matrix from user
+	cout<<"\nEnter Elements of Matrix 1 : ";
+	a1.setmat();
+	cout<<"\n\n_____________________________________________________________________";
+	cout<<"\nEnter Elements of Matrix 2 : ";
+	a2.setmat();
+	cout<<"\n\n_____________________________________________________________________";
+	
+	//displaying the entered input by the user
+	cout<<"\nMatrix 1 Elements : ";
+	a1.showmat();
+	cout<<"\n\n_____________________________________________________________________";
+	cout<<"\nMatrix 2 Elements : ";
+	a2.showmat();
+	cout<<"\n\n_____________________________________________________________________";
+	
+	//displaying the addition of the two matrix 
+	cout<<"\nAdditions of two Matrix : ";
+	a1+a2;
+
 	return 0;
 }
