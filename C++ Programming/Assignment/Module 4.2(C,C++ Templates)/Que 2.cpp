@@ -19,7 +19,7 @@ void sortArray(T arr[], int n) {
     }
 }
 int main() {
-    int arr[] = {3, 2, 5, 1, 4};
+    int arr[] = {31, 62, 95, 51, 74};
     int n = sizeof(arr) / sizeof(arr[0]);			//getting the numbers of elements of array to sort
     sortArray(arr, n);								//calling the method
     for (int i = 0; i < n; i++)						//using the for loop to print the final sorted array
