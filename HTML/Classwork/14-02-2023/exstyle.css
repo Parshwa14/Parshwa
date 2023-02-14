@@ -1,0 +1,34 @@
+h1
+{
+	text-align: center;
+	color: darklateblue;
+	background-color:lightgoldenrodyellow ;
+}
+
+#p1
+{ 
+	text-align: center;
+	font-family: cursive;
+	font-size: 30px;
+	color: cornflowerblue;
+
+}
+
+
+#p2
+{ 
+	text-align: left;
+	font-family: cursive;
+	font-size: 30px;
+	color: darkgoldenrod;
+
+}
+
+#p3
+{ 
+	text-align: right;
+	font-family: fantasy;
+	font-size: 30px;
+	color: chocolate;
+
+}
