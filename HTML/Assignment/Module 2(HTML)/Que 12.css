@@ -1,0 +1,65 @@
+.my-button {
+  margin-top: -15px;
+  margin-left: 45px;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 19px;
+  font-variant: small-caps;
+  font-weight: bolder;
+
+}
+
+.my-button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.notmy-button
+{
+
+  margin-top: -15px;
+  margin-left: 95px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 19px;
+  font-variant: small-caps;
+  font-weight: bolder;
+}
+
+.notmy-button:hover{
+  background-color: aqua;
+  cursor: pointer;
+}
+
+h1
+{
+  text-align: center;
+  color: forestgreen;
+  margin-top: -10px;
+}
+
+.dv1
+{
+  background-color: skyblue;
+  width : 1250px;
+  height: 700px;
+  margin-left: 45px;
+}
+
+h4
+{
+  text-align: left;
+  color: darkred;
+  margin-left:55px ;
+  margin-top: -30px;
+}
+
+.p1
+{
+  color: blueviolet;
+  text-align : center ; 
+}

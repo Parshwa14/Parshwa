@@ -1,0 +1,32 @@
+/* unvisited link */
+a:link {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* visited link */
+a:visited {
+  color: purple;
+  text-decoration: underline;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: green;
+  text-decoration: none;
+}
+
+h1
+{
+	text-align: center;
+}
+#p1
+{
+	text-align: center;
+}

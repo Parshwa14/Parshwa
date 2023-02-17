@@ -1,0 +1,44 @@
+#p1/* using id */
+{
+	text-align : center ; 
+	color : blueviolet;
+}
+.d1/* using class*/
+
+{
+	text-align: center;
+	background-color: aqua;
+	font-family: cursive;
+}
+
+#p2
+{
+	text-align: left;
+	color: darkmagenta;
+	margin-left: 26%;
+}
+
+#p3
+{
+	text-align: right;
+	color: darkolivegreen;
+	margin-right: 26%;
+}
+
+#sp1
+{
+	color: red;
+}
+
+#sp2
+{
+	color: greenyellow;
+}
+
+#d1
+{
+	background-color: lightcyan;
+	width: 1350px;
+	height: 200px;
+
+}
