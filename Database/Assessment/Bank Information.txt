@@ -1,0 +1,118 @@
+CREATE TABLE Bank
+(
+    Branch_ID int(50) PRIMARY KEY,
+    Branch_Name varchar(50),
+    Branch_City varchar(50)
+);
+
+
+________________________________________________________________________________________________________________________________________________
+
+
+CREATE TABLE Account_Holder
+(
+    Account_holder_ID int(50) PRIMARY KEY,
+    Account_No int(50),
+    Account_holder_Name varchar(100),
+    City varchar(50),
+    Contact varchar(50),
+    Date_of_Account_Created varchar(50),
+    Account_Status varchar(50),
+    Account_Type varchar(50),
+    Balance int(50)
+);
+
+
+________________________________________________________________________________________________________________________________________________
+
+
+CREATE TABLE Loan
+(
+    Loan_no int(50) PRIMARY KEY,
+    Branch_ID int(50),
+    Account_holder_ID int (50),
+    Loan_Amount int(50),
+    Loan_Type varchar(50),
+    FOREIGN KEY (Branch_ID) REFERENCES bank(Branch_ID),
+    FOREIGN KEY (Account_holder_ID) REFERENCES account_holder(Account_holder_ID)
+);
+
+
+________________________________________________________________________________________________________________________________________________
+
+INSERT INTO account_holder (Account_holder_ID,Account_No,Account_holder_Name,City,Contact,Date_of_Account_Created,Account_Status,Account_Type,Balance) VALUES 
+(1101,120120120,'Parshwa Bhavsar','Gandhinagar','9900990090','10-04-2020','Active','Savings Account',10000),
+(1104,120143121,'Rahul Patel','Ahmedabad','7904556870','12-08-2021','Active','Savings Account',23000),
+(1109,120124123,'Jayesh Mewada','Rajkot','9838348833','04-10-2011','Active','Savings Account',54000),
+(1123,120154127,'Bipin Patel','Gandhinagar','9934255404','11-05-2008','Active','Savings Account',190000),
+(1165,120176124,'Rohit Raval','Gandhinagar','9000432155','20-04-2021','Active','Savings Account',15000);
+
+
+________________________________________________________________________________________________________________________________________________
+
+
+INSERT INTO bank (Branch_ID,Branch_Name,Branch_City) VALUES (12501,'SBIGNR','Gandhinagar'),
+(12502,'SBIAHM','Ahmedabad'),(12503,'SBIRJK','Rajkot'),(12504,'SBISK','Sabarkantha'),(12505,'SBISRT','Surat');
+
+
+________________________________________________________________________________________________________________________________________________
+
+
+INSERT INTO `loan` (`Loan_no`, `Branch_ID`, `Account_holder_ID`, `Loan_Amount`, `Loan_Type`) VALUES ('545632', '12501', '1101', '25000', 'Personal Loan'), 
+('543212', '12502', '1104', '45000', 'Personal Loan'), ('542213', '12501', '1165', '12000', 'Personal Loan');
+
+
+
+________________________________________________________________________________________________________________________________________________
+
+Consider an example where there’s an account holder table where we are
+doing an intra bank transfer i.e. a person holding account A is trying to
+transfer RS 3000 to account B. 
+
+BEGIN ;
+
+UPDATE account_holder SET balance = Balance - 3000 WHERE account_no = 120124123;
+UPDATE Account_holder SET balance = Balance + 3000 WHERE account_no = 120120120;
+
+COMMIT;
+
+
+________________________________________________________________________________________________________________________________________________
+
+
+ fetch the details of the account holder who are related from the same
+city 
+
+SELECT * FROM account_holder WHERE City = 'Gandhinagar';
+
+
+________________________________________________________________________________________________________________________________________________
+
+Write a query to fetch account number and account holder name, whose
+accounts were created after 15th of any month
+
+
+SELECT Account_no, Account_holder_Name,Date_of_Account_Created FROM account_holder WHERE Date_of_Account_Created > '15-MM-YYYY';
+
+
+
+________________________________________________________________________________________________________________________________________________
+
+
+Write a query to display the city name and count the branches in that city.
+Give the count of branches an alias name of Count_Branch.
+
+SELECT Branch_city, COUNT(*) AS Count_Branch FROM bank GROUP BY Branch_city;
+
+
+________________________________________________________________________________________________________________________________________________
+
+
+Write a query to display the account holder’s id, account holder’s name,
+branch id, and loan amount for people who have taken loans. (NOTE : use
+sql join concept to solve the query)
+
+
+SELECT account_holder.Account_holder_ID, account_holder.Account_holder_Name, loan.Branch_ID, loan.Loan_Amount 
+FROM account_holder 
+INNER JOIN loan ON account_holder.Account_holder_ID = loan.Account_holder_ID;
